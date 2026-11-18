@@ -6,3 +6,10 @@ test('first test', async ({ page }) => {
   await expect(page).toHaveTitle("LoginPage Practise | Rahul Shetty Academy");
 });
 
+test('Second test', async({browser})=>{
+   const context = browser.newContext();
+  const page= await context.newPage();
+  await page.goto("https://rahulshettyacademy.com/loginpagePractise/");
+
+})
+
