@@ -7,9 +7,8 @@ test('first test', async ({ page }) => {
 });
 
 test('Second test', async({browser})=>{
-   const context = browser.newContext();
+   const context = await browser.newContext();
   const page= await context.newPage();
   await page.goto("https://rahulshettyacademy.com/loginpagePractise/");
-
-})
+});
 
